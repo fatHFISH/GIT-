@@ -4,14 +4,14 @@ public class Schoolsystem {
  static Scanner scan=new Scanner(System.in);
  int[ ] maxStudent=new int[3];    //每个班的最大人数
  int[ ] currentStudent=new int[3];  //每个班的当前人数
- public Schoolsystem(int big, int medium, int small) { //获取班级可容纳人数
+ public Schoolsystem(int big, int medium, int small) { //
   for(int i=0;i<3;i++) maxStudent[i]=50;
   currentStudent[0]=maxStudent[0]-big;
   currentStudent[1]=maxStudent[1]-medium;
   currentStudent[2]=maxStudent[2]-small;
  EPAIR
 
- public Boolean addStudent(int stuType) { //判断增加学生
+ public Boolean addStudent(int stuType) { //
 	 for(int i=1;i<=3;i++) {
 		 if(stuType==i) {
 		 if(maxStudent[i-1]>currentStudent[i-1]) {
@@ -24,18 +24,17 @@ public class Schoolsystem {
 	 return false;
  }
 
- public void print(boolean a) { //打印结果
+ public void print(boolean a) {
   System.out.print(a);
  }
- public static ArrayList<Integer> parse(String input) { //arraylist方法
+ public static ArrayList<Integer> parse(String input) {
     String[] strs = input.split(" ");
     ArrayList<Integer> put=new ArrayList<Integer>();
     for(int i = 0;i < strs.length; i++)
      put.add(Integer.valueOf(strs[i]));
     return put;
     }
- public static void main(String[] args) {    //main方法
- }
+ public static void main(String[] args) {
    String a;
    System.out.println("分别按顺序加入空格间开输入三个班级的剩余量和4位同学要加入的班级");
       a=scan.nextLine();
