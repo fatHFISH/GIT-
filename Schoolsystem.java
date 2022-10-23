@@ -4,13 +4,14 @@ public class Schoolsystem {
  static Scanner scan=new Scanner(System.in);
  int[ ] maxStudent=new int[3];    //每个班的最大人数
  int[ ] currentStudent=new int[3];  //每个班的当前人数
- public Schoolsystem(int big, int medium, int small) {
+ public Schoolsystem(int big, int medium, int small) { //
   for(int i=0;i<3;i++) maxStudent[i]=50;
   currentStudent[0]=maxStudent[0]-big;
   currentStudent[1]=maxStudent[1]-medium;
   currentStudent[2]=maxStudent[2]-small;
- }
- public Boolean addStudent(int stuType) {
+ EPAIR
+
+ public Boolean addStudent(int stuType) { //
 	 for(int i=1;i<=3;i++) {
 		 if(stuType==i) {
 		 if(maxStudent[i-1]>currentStudent[i-1]) {
