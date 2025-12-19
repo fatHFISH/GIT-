@@ -1,0 +1,4 @@
+pip intsall sentence-transformers
+pip install faiss-cpu
+pip install openai
+pip install python-dotenv

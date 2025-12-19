@@ -1,0 +1,12 @@
+# 忽略 API 密钥
+.env
+
+# 忽略生成的本地数据库
+university
+university.pkl
+
+# 忽略缓存与虚拟环境
+__pycache__/
+venv/
+.idea/
+.vscode/
